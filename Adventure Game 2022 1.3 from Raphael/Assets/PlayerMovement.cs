@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,11 +9,19 @@ public class PlayerMovement : MonoBehaviour
 
     public float Speed = 2.5f;
     public float JumpHeight = 5f;
+    
+    public UnityEvent OnJump;
+    public UnityEvent OnLand;
+
+    int groundHits;
+    bool IsGrounded;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        groundHits = 0;
+        IsGrounded = false;
     }
 
     // Update is called once per frame
@@ -24,6 +33,27 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space)){
             rb.velocity = new Vector2(rb.velocity.x, JumpHeight);
             transform.GetChild(0).gameObject.GetComponent<Animator>().SetTrigger("Jump");
+
+            OnJump.Invoke();
+        }
+
+        transform.GetChild(0).gameObject.GetComponent<Animator>().SetBool("IsGrounded", IsGrounded);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.tag == "Ground"){
+            groundHits++;
+            IsGrounded = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other) {
+        if(other.gameObject.tag == "Ground"){
+            groundHits--;
+            if(groundHits == 0){
+                IsGrounded = false;
+                OnLand.Invoke();
+            }
         }
     }
 }
