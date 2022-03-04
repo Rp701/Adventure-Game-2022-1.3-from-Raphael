@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(Input.GetAxis("Horizontal")*Speed, rb.velocity.y);
         transform.GetChild(0).gameObject.GetComponent<Animator>().SetFloat("Speed", Mathf.Round(Mathf.Abs(Input.GetAxis("Horizontal"))));
 
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.Space) && IsGrounded){
             rb.velocity = new Vector2(rb.velocity.x, JumpHeight);
             transform.GetChild(0).gameObject.GetComponent<Animator>().SetTrigger("Jump");
 
