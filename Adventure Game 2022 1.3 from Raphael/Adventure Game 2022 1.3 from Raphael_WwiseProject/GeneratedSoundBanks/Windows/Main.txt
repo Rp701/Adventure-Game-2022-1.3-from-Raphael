@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2972976159	Play_base_per_movimento_anni_70			\Default Work Unit\Play_base_per_movimento_anni_70	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	697982561	base per movimento anni 70	Y:\Adventure-Game-2022-1.3-from-Raphael\Adventure Game 2022 1.3 from Raphael\Adventure Game 2022 1.3 from Raphael_WwiseProject\.cache\Windows\SFX\base per movimento anni 70_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\base per movimento anni 70		11044328
+

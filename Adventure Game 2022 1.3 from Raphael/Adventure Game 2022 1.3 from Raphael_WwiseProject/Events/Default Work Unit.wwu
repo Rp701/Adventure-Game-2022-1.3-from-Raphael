@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C2A63BC2-8137-4614-90A5-DF5C085BF166}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{C2A63BC2-8137-4614-90A5-DF5C085BF166}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_base_per_movimento_anni_70" ID="{3233A943-DD2F-424F-AB0A-A2FF67795FDC}">
+					<ChildrenList>
+						<Action Name="" ID="{C0CDD22F-70ED-4B66-BA3E-A7D5DF0094C9}" ShortID="193071309">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="base per movimento anni 70" ID="{2FBA24CC-8B29-488C-BC6F-0919EEA3E298}" WorkUnitID="{1B644EE0-B80A-4E3E-A94D-7C6E4C7F61B4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

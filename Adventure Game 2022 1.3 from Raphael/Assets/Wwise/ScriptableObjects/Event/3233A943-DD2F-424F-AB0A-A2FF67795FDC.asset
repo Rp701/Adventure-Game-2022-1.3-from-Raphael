@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83a24c36742044db7977447389053bf8, type: 3}
+  m_Name: 3233A943-DD2F-424F-AB0A-A2FF67795FDC
+  m_EditorClassIdentifier: 
+  objectName: Play_base_per_movimento_anni_70
+  id: 2972976159
+  guid: 3233A943-DD2F-424F-AB0A-A2FF67795FDC

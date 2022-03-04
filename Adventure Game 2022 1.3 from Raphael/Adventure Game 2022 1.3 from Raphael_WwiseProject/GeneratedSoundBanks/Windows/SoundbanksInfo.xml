@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>/Users/raphaelkimkarry/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Adventure-Game-2022-1.3-from-Raphael/Adventure Game 2022 1.3 from Raphael/Adventure Game 2022 1.3 from Raphael_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/raphaelkimkarry/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Adventure-Game-2022-1.3-from-Raphael/Adventure Game 2022 1.3 from Raphael/Adventure Game 2022 1.3 from Raphael_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/raphaelkimkarry/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Adventure-Game-2022-1.3-from-Raphael/Adventure Game 2022 1.3 from Raphael/Adventure Game 2022 1.3 from Raphael_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/raphaelkimkarry/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Adventure-Game-2022-1.3-from-Raphael/Adventure Game 2022 1.3 from Raphael/Adventure Game 2022 1.3 from Raphael_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="464624841">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2972976159" Name="Play_base_per_movimento_anni_70" ObjectPath="\Events\Default Work Unit\Play_base_per_movimento_anni_70" DurationType="OneShot" DurationMin="62.608845" DurationMax="62.608845">
+					<IncludedMemoryFiles>
+						<File Id="697982561" Language="SFX">
+							<ShortName>base per movimento anni 70.wav</ShortName>
+							<Path>SFX/base per movimento anni 70_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

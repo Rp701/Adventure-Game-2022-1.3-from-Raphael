@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1B644EE0-B80A-4E3E-A94D-7C6E4C7F61B4}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{1B644EE0-B80A-4E3E-A94D-7C6E4C7F61B4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="base per movimento anni 70" ID="{2FBA24CC-8B29-488C-BC6F-0919EEA3E298}" ShortID="563424526">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DFAA7E07-91AF-445B-81B1-A947CE5464C8}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1C2C59A3-D5C7-4DEC-9B50-17D6A4F19FBC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="base per movimento anni 70" ID="{31556CD6-7871-4A73-933E-6115C933209E}">
+							<Language>SFX</Language>
+							<AudioFile>base per movimento anni 70.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="697982561"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="base per movimento anni 70" ID="{31556CD6-7871-4A73-933E-6115C933209E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
