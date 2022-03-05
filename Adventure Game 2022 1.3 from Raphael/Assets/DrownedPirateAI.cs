@@ -10,6 +10,10 @@ public class DrownedPirateAI : MonoBehaviour
     public GameObject player;
     public float Speed = 3f;
 
+    public bool Wiggle = true;
+    public float WiggleSpeed = 1f;
+    public float WiggleEffect = 10f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +25,8 @@ public class DrownedPirateAI : MonoBehaviour
     void Update()
     {
         if(Mathf.Abs(transform.position.x-player.transform.position.x) > 2f){
+            if(Wiggle)
+                transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Cos(Time.time*WiggleSpeed)*WiggleEffect*1f);
             anim.SetFloat("Speed", 1f);
             if(player.transform.position.x > transform.position.x){
                 rb.velocity = new Vector2(Speed, rb.velocity.y);
@@ -28,6 +34,8 @@ public class DrownedPirateAI : MonoBehaviour
                 rb.velocity = new Vector2(-Speed, rb.velocity.y);
             }
         }else{
+            if(Wiggle)
+                transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             anim.SetFloat("Speed", 0f);
         }
     }

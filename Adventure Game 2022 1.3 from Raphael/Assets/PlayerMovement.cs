@@ -9,6 +9,10 @@ public class PlayerMovement : MonoBehaviour
 
     public float Speed = 2.5f;
     public float JumpHeight = 5f;
+
+    public bool Wiggle = true;
+    public float WiggleSpeed = 1f;
+    public float WiggleEffect = 10f;
     
     public UnityEvent OnJump;
     public UnityEvent OnLand;
@@ -38,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         transform.GetChild(0).gameObject.GetComponent<Animator>().SetBool("IsGrounded", IsGrounded);
+        if(Wiggle)
+            transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Cos(Time.time*WiggleSpeed)*WiggleEffect*Input.GetAxis("Horizontal"));
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
