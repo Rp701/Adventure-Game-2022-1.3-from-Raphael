@@ -1,0 +1,15 @@
+-- Player jump --
+PlayerMovement.cs: line 41
+
+-- Player land --
+PlayerMovement.cs: line 55
+
+-- Player speed -- (c# code to get value)
+float theMovement = Input.GetAxis("Horizontal")*Speed
+
+-- Check if player is in the air -- (c# code to get bool)
+bool isInAir = !IsGrounded;
+
+
+-- Drowned pirate speed -- (c# code to get value)
+float theMovement = move

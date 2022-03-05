@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, JumpHeight);
             transform.GetChild(0).gameObject.GetComponent<Animator>().SetTrigger("Jump");
 
+            // Player jumped
             OnJump.Invoke();
         }
 
@@ -49,6 +50,12 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.tag == "Ground"){
             groundHits++;
+
+            if(groundHits == 1){
+                // Player landed
+                OnLand.Invoke();
+            }
+
             IsGrounded = true;
         }
     }
@@ -58,7 +65,6 @@ public class PlayerMovement : MonoBehaviour
             groundHits--;
             if(groundHits == 0){
                 IsGrounded = false;
-                OnLand.Invoke();
             }
         }
     }

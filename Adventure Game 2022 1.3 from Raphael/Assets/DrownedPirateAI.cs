@@ -24,10 +24,12 @@ public class DrownedPirateAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float move = 0f;
         if(Mathf.Abs(transform.position.x-player.transform.position.x) > 2f){
             if(Wiggle)
                 transform.rotation = Quaternion.Euler(0f, 0f, Mathf.Cos(Time.time*WiggleSpeed)*WiggleEffect*1f);
             anim.SetFloat("Speed", 1f);
+            move = Speed;
             if(player.transform.position.x > transform.position.x){
                 rb.velocity = new Vector2(Speed, rb.velocity.y);
             }else if(player.transform.position.y < transform.position.x){
@@ -36,7 +38,10 @@ public class DrownedPirateAI : MonoBehaviour
         }else{
             if(Wiggle)
                 transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            move = 0f;
             anim.SetFloat("Speed", 0f);
         }
+
+        // the drowned pirate can't jump, so he doesn't have a jump and land method
     }
 }
